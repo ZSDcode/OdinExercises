@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="./gameStyle.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="result"></div>
+            <div class="score-container">
+                <div class="hScore">Human Score: 0</div>
+                <div class="cScore">Computer Score: 0</div>
+            </div>
+        </div>
+        <div class="clickables">
+            <img src="https://cdn-icons-png.flaticon.com/512/10163/10163231.png" onclick="play('rock')">
+            <img src="https://cdn-icons-png.flaticon.com/512/2541/2541988.png" onclick="play('paper')">
+            <img src="https://cdn-icons-png.flaticon.com/512/10363/10363577.png" onclick="play('scissors')">
+        </div>
+        <div class=buttons>
+            <a href="./index.html">Main Menu</a>
+            <a onclick="reset()">Reset?</a>
+            <a href="./endGame.html">End Game?</a>
+        </div>
+        <script src="./game.js"></script>
+    </body>
+</html>

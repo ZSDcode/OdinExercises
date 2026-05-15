@@ -1,0 +1,25 @@
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    border: 2px solid black;
+    flex-direction: column;
+}
+
+.box,
+.wrapper {
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.wrapper {
+    border: 2px solid black;
+}

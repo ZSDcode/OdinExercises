@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/kids-game-rock-paper-scissors-pattern-blue-background-134992619.jpg");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    border: 0px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #E5E7EB;
+    background-color: oklch(57.7% 0.245 27.325);
+}
+
+.clickables {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 35%;
+    background-image: none;
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    width: 70%;
+    gap: 16px;
+}
+
+.result {
+    font-size: 48px;
+    color: #1F2937;
+}
+
+.hScore,
+.cScore {
+    font-size: 24px;
+    color: #1F2937;
+}
