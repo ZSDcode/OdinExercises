@@ -24,6 +24,7 @@ const allBoxes = document.querySelectorAll(".box");
 const on = (box) => {
     clearInterval(box.interval);
     clearInterval(box.fadeInterval);
+    box.style["opacity"] = 1;
     box.interval = setInterval(() => {
         let r = Math.random() * 255;
         let b = Math.random() * 255;
@@ -34,7 +35,6 @@ const on = (box) => {
 
 const off = (box) => {
     clearInterval(box.interval);
-    clearInterval(box.fadeInterval);
     let op = 1;
     box.fadeInterval = setInterval(() => {
         box.style["opacity"]=op;
