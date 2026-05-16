@@ -35,6 +35,7 @@ const on = (box) => {
 
 const off = (box) => {
     clearInterval(box.interval);
+    clearInterval(box.fadeInterval);
     let op = 1;
     box.fadeInterval = setInterval(() => {
         box.style["opacity"]=op;
